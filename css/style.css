@@ -83,6 +83,134 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*------------- Base Header - Footer Styles ----------------*/
+header,
+footer {
+  display: flex;
+}
+
+header {
+  justify-content: center;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header styles */
+ header {
+  display: flex;
+  justify-content: center;
+ }
+
+ header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+ }
+
+ header figure {
+
+ }
+
+ .header-divider {
+
+ }
+
+ header nav {
+
+ }
+
+ header nav ul {
+  display: flex;
+  justify-content: space-around;
+
+ }
+
+ footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+
+ footer social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ footer social p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+/*------------- Mobile Styles - Homepage ----------------*/
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+/* Reviews */
+.reviews {
+  display: flex;
+  justify-content: center;  
+}
+
+/* About */
+.mission {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* FAQ */
+.faq {
+  display: flex;
+  justify-content: center;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 
 /* ==========================================================================
    Helper classes
