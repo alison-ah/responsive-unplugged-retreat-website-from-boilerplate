@@ -92,12 +92,15 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
   text-align: left;
 }
 
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -131,11 +134,11 @@ p {
 }
 
 img {
-
+  width: 100%;
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -165,7 +168,7 @@ address {
  }
 
  header figure {
-
+  width: 60%;
  }
 
  .header-divider {
@@ -229,6 +232,10 @@ address {
 
 /*------------- Mobile Styles - Homepage ----------------*/
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
@@ -267,9 +274,11 @@ input[type=button] {
 
 /* Features */
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
-  width: 90%;
 }
 
 .features .features-items {
@@ -315,12 +324,12 @@ input[type=button] {
 .mission {
   display: flex;
   justify-content: center;
-  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-content p {
@@ -349,7 +358,6 @@ input[type=button] {
 
 .faq-content {
   margin-bottom: 50px;
-  background-color: #2a423a;
 }
 
 .faq-content h4 {
