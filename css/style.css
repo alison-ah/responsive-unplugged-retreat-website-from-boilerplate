@@ -108,13 +108,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  font-size: 2.25em;
-  line-height: 2.6875em;
-  font-weight: 500;
-}
-
 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
@@ -126,6 +119,7 @@ h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.125em;
   font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
@@ -142,7 +136,7 @@ figure {
 }
 
 address {
-  font-size: 1em;
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -151,83 +145,86 @@ address {
 }
 
 /* Header styles */
- header {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  background-color: #202322;
- }
+header {
+ display: flex;
+ justify-content: center;
+ padding: 15px 0;
+ background-color: #202322;
+}
 
- header .content-wrapper {
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
   margin: 0;
- }
+}
 
- header figure {
+header figure {
   width: 60%;
- }
+}
 
- .header-divider {
+.header-divider {
   width: 100%;
   height: 1px;
   color: #3a3a3a;
- }
+  margin: 10px 0 20px 0;
+}
 
- header nav {
+header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: bold;
- }
+  text-transform: uppercase;
+}
 
- header nav ul {
+header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
- }
+}
+
+header nav ul li {
+  font-size: 1.125em;
+}
 
 /* Footer styles */
- footer {
+
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   background-color: #202322;
- }
+}
 
- footer p {
+footer p {
   margin: 0;
- }
+}
 
- footer .content-wrapper {
+footer .content-wrapper {
   width: 55%;
-  margin: 50px 0;
- }
+}
 
- footer .social-icons {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  size: 1.3125em;
-  background-color: #527158;
- }
+}
 
- footer .social-icons p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
- }
+}
 
- footer .contact {
+footer .contact {
   margin-bottom: 50px;
- }
+}
 
- footer .copyright {
+footer .copyright {
   margin: 20px 0;
- }
+}
 
 
 /*------------- Mobile Styles - Homepage ----------------*/
@@ -240,6 +237,15 @@ address {
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+/*Aside*/
+
 aside {
   display: flex;
   justify-content: center;
@@ -249,6 +255,7 @@ aside {
 aside .form {
   margin-top: 30px;
 }
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -281,7 +288,7 @@ input[type=button] {
   justify-content: center;
 }
 
-.features .features-items {
+.features .features-item {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -289,6 +296,7 @@ input[type=button] {
 }
 
 .features p {
+  text-align: center;
   margin: 0;
 }
 
@@ -301,10 +309,6 @@ input[type=button] {
   margin: 30px 0;
 }
 
-.features .features-icons {
-  size: 3.75em;
-}
-
 /* Reviews */
 .reviews {
   display: flex;
@@ -313,15 +317,18 @@ input[type=button] {
 }
 
 .reviews h2 {
-  line-height: 1.875em;
+  margin-bottom: 40px;
+  line-height: 1;
 }
 
 .reviews h3 {
   width: 55%;
+  margin: 20px 0;
 }
 
 /* About */
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
@@ -332,8 +339,34 @@ input[type=button] {
   background-color: #527158;
 }
 
+.contact-info{
+  width: 100%;
+  padding-top: 30px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0px;
+}
+
 .contact-content p {
   margin: 0;
+}
+
+.map figure {
+  position: relative;
+  padding-bottom: 125%;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* FAQ */
@@ -362,14 +395,6 @@ input[type=button] {
 
 .faq-content h4 {
   line-height: 1.5em;
-}
-
-/* Footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 
@@ -465,14 +490,9 @@ footer {
     margin: 100px 0;
   }
 
-  h1 {
-    font-size: 3em;
-    line-height: 3em;
-  }
-
   h2 {
     font-size: 2.25em;
-    line-height: 3em;
+    line-height: 1.85em;
   }
 
   h3 {
@@ -491,6 +511,10 @@ footer {
     justify-content: space-between;  
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -504,6 +528,15 @@ footer {
   }
 
   /* Hero Area*/
+ .hero-area {
+  min-height: 600px;
+ }
+
+ .hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+ }
 
   /*Aside*/
   aside .content-wrapper {
@@ -520,6 +553,11 @@ footer {
   }
 
   /*Features*/
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     align-items: center;
@@ -537,30 +575,73 @@ footer {
     justify-content: space-between;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
+  /* Footer */
+   footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  footer p {
+    line-height: 1.125em;
+  }
+
  /*About Page*/
  .mission-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 20px;
- }
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
 
  .mission-content p {
-  width: 45%;
- }
+    width: 45%;
+  }
 
  .contact-section .content-wrapper h2 {
-  width: 80%;
- }
+    width: 80%;
+  }
 
  .contact-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+ .contact-content h4 {
+    font-size: 1.5em;
  }
 
   /* FAQ */
@@ -582,49 +663,18 @@ footer {
     line-height: 0.984375em;
   }
 
-  /* Footer */
-  footer .content-wrapper {
-    width: 65%;
-    margin: 100px 0;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-  }
-
-  footer .copyright {
-    width: 100%;
-  }
-
-  footer,
-  footer .contact h4 {
-    font-size: 1.5em;
-  }
-
-  footer p {
-    line-height: 1.125em;
-  }
+ 
 }
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
   
   header {
-    padding: 15px;
+    padding: 15px 0;
   }
 
   .content-wrapper {
     max-width: 960px;
-  }
-
-  h1 {
-    font-size: 3.75em;
   }
 
   h2 {
@@ -653,8 +703,12 @@ footer {
   }
 
   aside .content-wrapper .form-description,
-  aside . .content-wrapper .form {
+  aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /*Features*/
@@ -671,14 +725,23 @@ footer {
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /*About Page*/
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
-  .mission h2 {
-    font-size: 3em;
+  .contact-content h4 {
+    font-size: 1.875em;
   }
 
   /*FAQ Page*/
@@ -687,7 +750,8 @@ footer {
     font-size: 3em;
   }
 
-  .faq h4 {
+  .faq h4,
+  .faq p {
     font-size: 1.125em;
     line-height: 1.125em;
   }
