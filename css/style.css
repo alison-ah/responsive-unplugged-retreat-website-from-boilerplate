@@ -287,8 +287,12 @@ input[type=button] {
   display: flex;
   justify-content: center;
 }
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
 
-.features .features-item {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -565,7 +569,7 @@ input[type=button] {
     flex-basis: 50%;
   }
 
-  .features .features-item-description {
+  .features .features-items-description {
     width: 62%;
   }
 
