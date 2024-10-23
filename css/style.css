@@ -206,6 +206,10 @@ footer .content-wrapper {
   width: 55%;
 }
 
+footer .contact {
+  margin-bottom: 50px;
+}
+
 footer .social-icons {
   display: flex;
   justify-content: space-around;
@@ -213,13 +217,17 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .contact {
-  margin-bottom: 50px;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
@@ -340,7 +348,7 @@ input[type=button] {
 .contact-section {
   display: flex;
   justify-content: center;
-  background-color: #527158;
+  background-color: #2a423a;
 }
 
 .contact-info{
@@ -359,7 +367,7 @@ input[type=button] {
 
 .map figure {
   position: relative;
-  padding-bottom: 125%;
+  padding-bottom: 75%;
   height: 0;
   width: 100%;
   overflow: hidden;
@@ -496,7 +504,7 @@ input[type=button] {
 
   h2 {
     font-size: 2.25em;
-    line-height: 1.85em;
+    line-height: 1.25em;
   }
 
   h3 {
@@ -571,6 +579,10 @@ input[type=button] {
 
   .features .features-items-description {
     width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /*Reviews */
