@@ -224,6 +224,7 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: .75em;
 }
 
 footer .social-icons p i {
