@@ -295,22 +295,6 @@ input[type=button] {
   display: flex;
   justify-content: center;
 }
-.features i {
-	font-size: 3.75em;
-    margin-bottom: 40px;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
-}
-
-.features p {
-  text-align: center;
-  margin: 0;
-}
 
 .features h2 {
   margin-bottom: 60px;
@@ -321,11 +305,29 @@ input[type=button] {
   margin: 30px 0;
 }
 
-/* Reviews */
-.reviews {
+.features .features-items {
   display: flex;
   justify-content: center;
-  background-color: #2a423a;  
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
 }
 
 .reviews h2 {
